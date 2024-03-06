@@ -33,7 +33,20 @@ export default function App() {
         return <img src={image.img_src} />
 
       })}
-      <input type="text" onChange={handleCamera} />
+      <select name="camera" onChange={handleCamera}>
+        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+        <option value="RHAZ">	Rear Hazard Avoidance Camera</option>
+        <option value="MAST">Mast Camera</option>
+        <option value="CHEMCAM">Chemistry and Camera Complex</option>
+        <option value="MAHLI">Mars Hand Lens Imager</option>
+        <option value="MARDI">Mars Descent Imager</option>
+        <option value="NAVCAM">	Navigation Camera</option>
+        <option value="PANCAM">Panoramic Camera</option>
+        <option value="MINITES">Miniature Thermal Emission Spectrometer</option>
+      </select>
+
+      {photos.map(data => <img src={data.img_src} alt={"This is an image of the mars " + data.rover.name + " rover."}/>)}
+
 
     </div>
   );
