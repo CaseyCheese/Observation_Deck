@@ -25,6 +25,7 @@ Welcome to the Planet Observatory! This web application harnesses the power of N
 # Features to Add
 - Create a custom URL to have permanent and always-available access to this project
 - Favourite images
+- Allow you to find all the images from all cameras that a mars rover took on a particular date
 - Fix the date and selector inputs to accurately display the images
 - Make the user's experience better by only allowing you to choose dates that apply to the specific rover APIs rather than being a random guess
 - Add Mars weather API
