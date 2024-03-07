@@ -1,0 +1,60 @@
+
+
+.images-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.image-card {
+    border: 1px solid rgb(37, 133, 87);
+    max-width: 256px;
+    /* height: 360px; */
+    margin: 0 auto;
+}
+
+.rover-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 0 10px;
+}
+
+.rovers-section, .cameras-section, .date-section, .rover-info {
+    border: thick double #32a1ce;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "btns btns side"
+        "cmra date side";
+}
+
+.rovers-section {
+    grid-area: btns;
+}
+
+.cameras-section {
+    grid-area: cmra;
+}
+
+.date-section {
+    grid-area: date;
+}
+
+.rover-info {
+    grid-area: side;
+}
+
+input, select {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.3em 0.8em;
+    /* font-size: 1em;
+    font-weight: 500; */
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}

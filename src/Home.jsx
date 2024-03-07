@@ -1,3 +1,4 @@
+import React from 'react'
 import { useEffect, useState } from 'react'
 import './Home.css';
 import axios from 'axios'
@@ -20,10 +21,9 @@ export default function Home() {
     <div className="App">
 
       <div className="home">
-        <h2>{apod.title}</h2>
-        <h4>{apod.date}</h4>
-        <img src={apod.url}/>
-        <p>{apod.explanation}</p>
+        <h1 className="title anta-regular">{apod.title}</h1>
+        <img className="url" src={apod.url} />
+        <p className="details">{apod.explanation}</p>
       </div>
 
     </div>
