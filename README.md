@@ -1,5 +1,5 @@
 # Planet Observatory
-This is an online music application where users can add and edit music.
+Welcome to the Mars Rover Image Viewer project! This web application harnesses the power of NASA's API to fetch and display captivating images captured by the Mars rovers. As humanity explores the Red Planet, this project aims to provide a seamless and immersive experience for users to delve into the wonders of Mars through stunning imagery.
 
 # Getting Started
 1. Add your NASA API key into to the '.env' file,
